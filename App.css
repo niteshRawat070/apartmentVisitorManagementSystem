@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+.welcomeScreen{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 100%;
+  padding: 25px 0;
+  color: #c52d2dd2;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background: #fff;
+  cursor: pointer;
+}
+.btn1{
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 100%;
+  padding: 25px 0;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background: #c52d2dd2;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  width: 100%;
+  min-width: 100vh;
+  height: 100vh;
+  min-height: 100vh;
+  /* padding: 20px 20px; */
+  background: #e9e9e9;
+}
+.login1 {
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 100vh;
+  height: 100vh;
+  min-height: 100vh;
+  /* padding: 20px 20px; */
+  background: #e9e9e9;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  border-radius: 20px 0px 0px 20px;
+  /* margin: auto; */
+  width: 95%;
+  height: 90%;
+  /* max-width: 520px;
+  min-height: 600px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: radial-gradient(
+    ellipse at left bottom,
+    rgba(206, 49, 49, 0.904) 0%,
+    rgba(199, 43, 43, 0.774) 59%,
+    rgba(197, 34, 34, 0.555) 100%
+  ); */
+  background-color: rgba(219, 68, 68, 0.904);
+  /* box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.6); */
+}
+.login1 .loginContainer1 {
+  padding: 60px;
+  border-radius: 0px 20px 20px 0px;
+  /* margin: auto; */
+  width: 95%;
+  height: 90%;
+  /* max-width: 520px;
+  min-height: 600px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: radial-gradient(
+    ellipse at left bottom,
+    rgb(238, 234, 234) 0%,
+    rgb(238, 225, 225) 59%,
+    rgb(172, 163, 163) 100%
+  ); */
+  background-color: rgb(238, 234, 234);
+
+  /* box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.6); */
+}
+
+.login .loginContainer label {
+  color: rgba(255, 255, 255, 0.911);
+  padding: 5px;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+.login1 .loginContainer1 label {
+  color: #c52d2dd2;
+  padding: 5px;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  color: rgb(202, 39, 39);
+  letter-spacing: 1px;
+}
+.login1 .loginContainer1 input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(219, 68, 68, 0.904);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+.login1 .loginContainer1 .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+.login1 .loginContainer1 .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #c52d2dd2;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.login1 .loginContainer1 .btnContainer p span {
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: white;
+}
+.login1 .loginContainer1 .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  padding: 5px;
+  font-size: 16px;
+}
+.login1 .loginContainer1 .errorMsg1 {
+  color: red;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+}
+
+.hero nav {
+  background: #603bbb;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+.hero nav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #3a2b58;
+}
+
+
+.firstScreenContainer{
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(2,1fr);
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.start{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.how{
+  display: flex;
+  background-color: #c52d2dd2;
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.residentMainContainer{
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  /* background: radial-gradient(
+    ellipse at left bottom,
+    #cacacaa4  0%,
+    rgb(255, 255, 255) 59%,
+    #d4d3d3a4 100%
+  ); */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.residentDetails{
+  display: flex;
+  background: rgba(219, 68, 68, 0.904);
+  height: 40%;
+  width: 100%;
+  min-height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+.userInputs{
+  display: flex;
+  height: 60%;
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.userInputs input{
+  margin: 10px;
+  background: rgba(219, 68, 68, 0.904);
+  color: #fff;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  outline: none;
+}
+.userInputs ::placeholder{
+  color: rgba(255, 255, 255, 0.726);
+}
+.userInputs label{
+  color: #c52d2dd2;
+  letter-spacing: 2px;
+}
+
+.dropDown{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 200vh;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.dropDownText{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 30%;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.dropDownText p{
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+}
+
+.dropDownText button{
+  border: 1px solid #c52d2dd2;
+  margin-top: 10px;
+}
+
+.startingText{
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(219, 68, 68, 0.904);
+  align-items: center;
+  justify-content: center;
+}
+.details{
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (max-width:550px){
+  .firstScreenContainer{
+  grid-template-columns: repeat(1,1fr);
+  }
+  .welcomeScreen{
+  grid-template-columns: repeat(1,1fr);
+  }
+}
